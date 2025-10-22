@@ -906,4 +906,330 @@ section {
     font-weight: 700;
     margin-bottom: -0.5rem;
     color: #ffffff; /* Vinho escuro */
+
+}
+/* ================================================== */
+/* CORREÇÕES ESPECÍFICAS PARA MOBILE */
+/* ================================================== */
+
+@media (max-width: 768px) {
+    
+    /* 🔥 CORREÇÃO DO HEADER E LOGO */
+    .header {
+        height: 70px;
+    }
+    
+    .nav {
+        padding: 0.5rem 1rem !important; /* Remove padding enorme */
+        justify-content: center !important; /* Centraliza a logo */
+        height: 70px;
+    }
+    
+    .nav-logos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 0 auto;
+    }
+    
+    .logo-img {
+        height: 45px !important; /* Logo menor e proporcional */
+        width: auto;
+    }
+    
+    .nav-menu {
+        display: none; /* Esconde menu no mobile */
+    }
+    
+    /* 🔥 CORREÇÃO DO HERO */
+    .hero {
+        padding: 90px 0 40px !important;
+        margin-top: 70px;
+    }
+    
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem !important;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem !important;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .btn-primary {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+        justify-content: center;
+    }
+    
+    /* 🔥 CORREÇÃO DOS CARDS DE SERVIÇOS */
+    .services {
+        padding: 50px 0 !important;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .service-card {
+        min-height: auto !important;
+        padding: 1.5rem 1rem !important;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .service-icon img {
+        width: 60px !important; /* Ícones menores */
+        margin-bottom: 0.75rem;
+    }
+    
+    .service-icon2 img {
+        width: 50px !important;
+        margin-bottom: 0.75rem;
+    }
+    
+    .service-card h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.75rem;
+    }
+    
+    .service-card p {
+        font-size: 0.9rem !important;
+        line-height: 1.4;
+    }
+    
+    /* 🔥 CORREÇÃO DA SEÇÃO SOBRE */
+    .about {
+        padding: 50px 0 !important;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .about-text h2 {
+        text-align: center !important;
+    }
+    
+    .image-placeholder {
+        height: 300px !important; /* Imagem menor */
+        order: -1; /* Coloca imagem antes do texto */
+    }
+    
+    .imagemcarlane {
+        object-position: 0px -20px !important; /* Ajuste melhor no mobile */
+    }
+    
+    /* 🔥 CORREÇÃO DOS DIFERENCIAIS */
+    .diferenciais {
+        padding: 50px 0 !important;
+    }
+    
+    .diferenciais-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    .diferencial-card {
+        min-height: auto !important;
+        padding: 1.5rem 1rem !important;
+        margin: 0 auto;
+    }
+    
+    .diferencial-icon img {
+        width: 4rem !important;
+    }
+    
+    /* 🔥 CORREÇÃO DO NOVO CONTATO */
+    .contact {
+        padding: 50px 0 !important;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+    }
+    
+    .contact-option {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.25rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .option-icon {
+        margin-bottom: 0.75rem;
+    }
+    
+    .btn-whatsapp, .btn-schedule, .btn-video {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    .quick-btn {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* 🔥 CORREÇÃO DO CTA */
+    .cta {
+        padding: 40px 0 !important;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .cta-content p {
+        font-size: 1rem !important;
+    }
+    
+    /* 🔥 CORREÇÃO DO FOOTER */
+    .footer {
+        padding: 30px 0 15px !important;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    /* 🔥 CORREÇÃO DOS TÍTULOS */
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0 1rem;
+    }
+    
+    .section-title2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0 1rem;
+    }
+}
+
+/* ================================================== */
+/* CORREÇÕES PARA TELAS MUITO PEQUENAS (iPhone SE etc) */
+/* ================================================== */
+
+@media (max-width: 380px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem !important;
+    }
+    
+    .section-title, .section-title2 {
+        font-size: 1.6rem !important;
+    }
+    
+    .service-card, .diferencial-card {
+        padding: 1.25rem 0.875rem !important;
+    }
+    
+    .nav-logos {
+        gap: 0.75rem;
+    }
+    
+    .logo-img {
+        height: 40px !important;
+    }
+}
+
+/* ================================================== */
+/* MELHORIAS GERAIS PARA MOBILE */
+/* ================================================== */
+
+/* Melhora a experiência de toque */
+@media (max-width: 768px) {
+    .btn-primary, .btn-whatsapp, .btn-schedule, .btn-video, .quick-btn {
+        min-height: 44px; /* Tamanho mínimo para dedos */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Suaviza as animações no mobile */
+    .service-card:hover, .diferencial-card:hover {
+        transform: none; /* Remove hover no mobile */
+    }
+    
+    /* Ajusta o WhatsApp float */
+    .whatsapp-float {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+/* ================================================== */
+/* MENU HAMBURGER PARA MOBILE (OPCIONAL) */
+/* ================================================== */
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #722F37;
+        z-index: 1001;
+    }
+    
+    .nav-menu.mobile-open {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+    }
+    
+    .nav-menu.mobile-open li {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-menu.mobile-open a {
+        display: block;
+        padding: 0.75rem 1rem;
+    }
 }
